@@ -21,12 +21,6 @@
     <!-- Meta tags for SEO and social sharing -->
     <meta name="robots" content="index,follow" />
 
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- Import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
   </head>
@@ -36,6 +30,8 @@
         <img
           id="test_img"
           src="./assets/retouch-before.png"
+          width="543"
+          height="720"
           crossorigin="anonymous"
         />
       </a-assets>
@@ -50,7 +46,7 @@
         <a-image
           id="test"
           src="#test_img"
-          position="0 0 0"
+          position="0 0 -5"
           rotation="-90 0 0"
           width=""
           height=""
@@ -58,10 +54,14 @@
           transparent="true"
           alpha-test="0.2"
           shader="standard"
-          scale="1 1 1"
+          scale="9.87 9.87 9.87"
           visible=""
           material=""
           geometry=""
+          smooth="true"
+          smoothCount="10"
+          smoothTolerance=".01"
+          smoothThreshold="5"
         ></a-image>
       </a-marker>
 
